@@ -1,8 +1,9 @@
-package com.remusrd.zuulsample.security;
+package com.remusrd.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 
 public class JwtConfig {
+
 	@Value("${security.jwt.uri:/auth/**}")
 	private String Uri;
 
@@ -38,3 +39,4 @@ public class JwtConfig {
 		return secret;
 	}
 }
+

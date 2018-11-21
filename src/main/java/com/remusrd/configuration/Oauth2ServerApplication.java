@@ -1,6 +1,5 @@
-package com.remusrd;
+package com.remusrd.configuration;
 
-import com.remusrd.configuration.JwtConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
