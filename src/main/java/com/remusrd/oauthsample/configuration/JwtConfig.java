@@ -1,4 +1,4 @@
-package com.remusrd.configuration;
+package com.remusrd.oauthsample.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 
@@ -16,9 +16,6 @@ public class JwtConfig {
 	@Value("${security.jwt.expiration:#{24*60*60}}")
 	private int expiration;
 
-	@Value("${security.jwt.secret:JwtSecretKey}")
-	private String secret;
-
 	public String getUri() {
 		return Uri;
 	}
@@ -35,8 +32,5 @@ public class JwtConfig {
 		return expiration;
 	}
 
-	public String getSecret() {
-		return secret;
-	}
 }
 
