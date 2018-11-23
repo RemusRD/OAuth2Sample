@@ -29,8 +29,9 @@ public class Oauth2ServerApplication {
 		userInfo.put("authorities", AuthorityUtils.authorityListToSet(user.getUserAuthentication().getAuthorities()));
 		return userInfo;
 	}
+
 	@Bean
-	public JwtConfig jwtConfig(){
+	public JwtConfig jwtConfig() {
 		return new JwtConfig();
 	}
 }
